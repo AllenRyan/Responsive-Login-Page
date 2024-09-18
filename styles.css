@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #181818;
+    color: #fff;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex: 1;
+    max-width: 1400px;
+}
+
+#signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+#signin .logo {
+    margin-bottom: 8vh;
+}
+
+#signin .logo img {
+    width: 300px;
+}
+
+#signin label {
+    font-size: 0.9rm;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 0.2rem 1rem;
+    line-height: 1.2;
+}
+
+#signin .secondary-btn,
+.or,
+.links {
+    width: 100%;
+}
+
+#signin .links a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+#signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+
+#signin .or span {
+    padding: 0 0.8rem;
+}
+
+#signin .primary-btn {
+    width: 100%;
+
+}
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    display: block;
+    height: 2.7rem;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #f96816;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.primary-btn:hover {
+    background-color: #ff7b39;
+
+}
+
+.secondary-btn {
+    padding: 0.7rem 1rem;
+    display: block;
+    height: 2.7rem;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.secondary-btn:hover {
+    border-color: #ff7b39;
+    color: #ff7b39;
+
+}
+
+#main-footer {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 2rem;
+}
+
+#main-footer div {
+    padding-top: 0.3rem;
+}
+
+#main-footer a {
+    text-decoration: none;
+    color: #f96816;
+}
+
+#main-footer a:hover {
+    text-decoration: none;
+    color: #ff7b39;
+}
+
+
+#right {
+    flex: 1;
+}
+/* showcase */
+#showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center / cover;
+    height: 100vh;
+    text-align: center;
+}
+#showcase .showcase-text{
+    font-size: 3rem;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+#showcase .secondary-btn{
+    width: 70%;
+    margin: auto;
+}
+@media (max-width:600px){
+    #right{
+        display: none;
+    }
+    #left .logo{
+     margin-bottom: 4vh;
+    }
+    #left .text-input{
+        margin-bottom: 1rem;
+    }
+}
+
+/* media queries */
+@media (min-width:1200px) {
+    #left {
+        flex: 4
+    }
+
+    #right {
+        flex: 6
+    }
+}
